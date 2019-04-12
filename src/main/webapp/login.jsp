@@ -5,15 +5,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<form action="user/login" method="post">
-		<label>账号：</label>
-			<input type="text" id="txtUsername" name="username" placeholder="请输入账号" /><br/>
-		<label>密码：</label>
-			<input type="password" id="txtPassword" name="password" placeholder="请输入密码" /><br/>
-			<input type="submit" value="提交" />
-			<input type="reset" value="重置" />
+	<form role="form" action="user/login" method="post">
+	  <div class="form-group">
+	  	<div class="input-group input-group-sm">
+		    <label for="name">账户</label>
+		    <input type="text" class="form-control" name="username" placeholder="请输入用户名">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	  	<div class="input-group input-group-sm">
+		    <label for="name">密码</label>
+		    <input type="password" class="form-control" name="password" placeholder="请输入密码">
+	    </div>
+	  </div>
+	  <button type="submit" class="btn btn-default">提交</button>
 	</form>
 </body>
 </html>

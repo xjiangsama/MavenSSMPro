@@ -8,5 +8,10 @@
 </head>
 <body>
 	<h3>欢迎，${user.username }</h3>
+	<ul class="bc-social-buttons">
+        <li class="social-forum">
+          <a class="" href="queryall">查询所有</a>
+        </li>
+      </ul>
 </body>
 </html>
